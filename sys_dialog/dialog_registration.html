@@ -1,0 +1,53 @@
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+            <h2>Einfach und schnell zum <span>eigenen Account</span></h2>
+        </div>
+    </div>
+</div>  
+<form method="post" id="registration_form">
+	<div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <div class="box">                
+    			<input type="text" name="form_user_name" placeholder="Benutzername" />
+                <span class="error error_username"></span>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <div class="box">
+				<input type="text" name="form_user_email" placeholder="Emailadresse" />
+				<span class="error error_email"></span>
+    		</div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <div class="box">
+    			<input type="password" name="form_user_password" placeholder="Passwort" />
+	    		<span class="error error_password"></span>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <div class="box">
+    			<input type="password" name="form_user_password_repeat" placeholder="Passwort wiederholen" />
+	    		<span class="error error_password_repeat"></span>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="box">
+    			<input type="file" name="form_user_avatar" placeholder="Profilbild auswählen" />
+	    		<span class="error error_avatar"></span>
+            </div>
+        </div>
+	</div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-5 col-sm-offset-7 col-lg-4 col-lg-offset-8">
+            <div class="box">
+				<button id="registration_button" type="submit" name="btn_registration" class="box_button">
+                    <img class="file_upload_button_icon" src="sys_images/icon_registration.png">
+                    <span>Regestrieren</span>
+                </button>
+			</div>
+        </div>
+	</div>
+</form>
+
+<script src="sys_script/dialog_registration_validation.js"></script>

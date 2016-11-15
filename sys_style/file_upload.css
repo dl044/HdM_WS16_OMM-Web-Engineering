@@ -1,0 +1,32 @@
+.box_dragndrop, .box_uploading, .box_success, .box_error { display:none; }
+.file_upload.has-advanced-upload .box_dragndrop { display: inline; }
+.file_upload.is-dragover { background-color: grey; }
+.file_upload.is-uploading .box_input { visibility: none; }
+.file_upload.is-uploading .box_uploading { display:block; }
+.box_input { text-align:center; }
+.box_input label { font-family:Myriad Pro; }
+.no-js .box_button { display:block; }
+.file_upload.has-advanced-upload { outline:3px dashed #3a3a3a; outline-offset:-3px; transition:background-color .15s linear; padding:130px 30px; margin:0 0 20px 0; }
+.box_file { display:none; }
+.box_button { text-align:center; font-family:Myriad Pro; color:#3a3a3a; margin:0; box-shadow:0px 0px 2px 1px rgba(0, 0, 0, 0.2); padding:0; display:inline-block; text-align:center; background-color:#ffffff; border:none; }
+.box_button .file_upload_button_icon { width:20px; float:left; background-color:#fdb60c; padding:8px; }
+.box_button span { padding:12px 8px 4px 44px; width:140px; display:block; font-size:16px; }
+
+@media only screen and (min-width: 480px) {
+
+}
+
+@media only screen and (min-width: 620px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1024px) {
+	
+}
+
+@media only screen and (min-width: 1200px) {
+
+}

@@ -1,0 +1,5 @@
+div.file_data { cursor:pointer; padding:0 40px 0 0; background-image:url("../sys_images/icon_acc_open.png"); background-repeat:no-repeat; background-position:right top 4px; background-size:25px auto; transition: background-image 0.6s ease-in-out; }
+div.file_data.active_file { background-image:url("../sys_images/icon_acc_close.png"); }
+
+div.file_action { max-height:0; overflow:hidden; transition:0.6s ease-in-out; opacity:0; padding:0; margin:0; }
+div.file_action.show_file_func { opacity:1; padding:15px 4px 4px; max-height:500px; }

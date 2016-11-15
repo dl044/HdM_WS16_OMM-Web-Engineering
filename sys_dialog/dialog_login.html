@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+            <h2><span>Login</span> und weiter zum Dashboard</h2>
+        </div>
+    </div>
+</div>    
+<form name="loginform" class="dialog-signin" method="post" id="login_form">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <div class="box">
+                <input id="test" type="text" class="" name="form_user_email" placeholder="Emailadresse" />
+                <span class="error error_email"></span>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <div class="box">
+                <input type="password" class="" name="form_user_password" placeholder="Passwort" />
+            	<span class="error error_password"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-5 col-sm-offset-7 col-lg-4 col-lg-offset-8">
+            <div class="box">
+                <button id="login-button" type="submit" name="btn-login" class="box_button">
+                    <img class="file_upload_button_icon" src="sys_images/icon_login.png">
+                    <span>Anmelden</span>
+                </button>
+            </div>
+        </div>
+    </div>  
+</form>
+
+<script src="sys_script/dialog_login_validation.js"></script>

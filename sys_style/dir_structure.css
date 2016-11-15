@@ -1,0 +1,30 @@
+section#dir_structure > ul { margin-left:0; display:block; position:fixed; z-index:100; top:50px; background-color:#ffffff; list-style-type:none; width:96%; padding:15px 2%; left:0; bottom:0; overflow-y:scroll; }
+section#dir_structure > ul.hide_dir_structure { margin-left:-800px; transition:margin-left 0.6s ease-in-out; }
+section#dir_structure ul li a { display:block; margin:0 0 15px; }
+section#dir_structure ul li a.dir { padding:10px 5px 10px 45px; border:#dddddd solid 3px; background-image:url("../sys_images/bg_dir.png"); background-position:left 10px top 10px; background-repeat:no-repeat; background-size:auto 20px; text-decoration:none; }
+section#dir_structure ul li a.dir h2 { font-size:20px;	font-family:Myriad Pro; font-weight:100; color:#3a3a3a; }
+section#dir_structure ul li a.dir p { display:none; font-size:12px; font-family:Myriad Pro; color:#3a3a3a; }
+section#dir_structure ul li.sub_dir ul { list-style-type:none; }
+section#dir_structure ul li.sub_dir.close_sub_dir > .scroll_div { display:block; }
+
+li.sub_dir .scroll_div { position:fixed; top:50px; bottom:0; padding:15px 2%; z-index:100; width:96%; background-color:#ffffff; overflow-y:scroll; }
+li.sub_dir > .scroll_div { margin-left:-800px; transition:margin-left 0.6s ease-in-out; }
+li.sub_dir.close_sub_dir > .scroll_div { margin-left:-2%; transition:margin-left 0.6s ease-in-out; }
+
+.back_li { background-color:#dddddd; }
+.back_li a { color:#ffffff; text-decoration:none; display:block; padding:10px 10px; font-family:Myriad Pro; font-size:16px; }
+
+@media only screen and (min-width: 620px) {
+	section#dir_structure > ul { width:280px; padding:15px; border-right:#cdcdcd solid 4px; }
+	section#dir_structure > ul.hide_dir_structure { margin-left:0; }
+	li.sub_dir .scroll_div { padding:15px; width:280px; }
+	li.sub_dir.close_sub_dir > .scroll_div { margin-left:-15px; }
+}
+
+@media only screen and (min-width: 1200px) {
+	section#dir_structure > ul { width:400px; padding:20px 15px; top:70px; }
+	section#dir_structure ul li a.dir { padding:10px 10px 10px 70px; background-size:auto 40px; }
+	section#dir_structure ul li a.dir p { display:block; }
+	li.sub_dir .scroll_div { top:70px; width:400px; padding:20px 15px; }
+	.back_li a { font-size:20px; padding:15px; }
+}
